@@ -4,7 +4,7 @@
  * @license http://www.opensource.org/licenses/mit-license.php MIT (see the LICENSE file)
  */
 
-namespace MyCLabs\Enum;
+namespace Isparks\Foundation\Helpers;
 
 /**
  * Base Enum class
@@ -103,7 +103,7 @@ abstract class Enum implements \JsonSerializable
      * @psalm-param mixed $variable
      * @return bool
      */
-    final public function equals($variable = null): bool
+    final public function equals($variable = null)
     {
         return $variable instanceof self
             && $this->getValue() === $variable->getValue()
